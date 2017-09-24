@@ -125,14 +125,17 @@ SWIFT_CLASS("_TtC7Pokedex8PokeCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class AVAudioPlayer;
 @class UICollectionView;
 @class NSIndexPath;
 @class UICollectionViewLayout;
+@class UIButton;
 @class NSBundle;
 
 SWIFT_CLASS("_TtC7Pokedex14ViewController")
 @interface ViewController : UIViewController <UIScrollViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate>
 @property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified collection;
+@property (nonatomic, strong) AVAudioPlayer * _Null_unspecified musicPlayer;
 - (void)viewDidLoad;
 - (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
@@ -140,6 +143,8 @@ SWIFT_CLASS("_TtC7Pokedex14ViewController")
 - (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView * _Nonnull)collectionView;
 - (void)parsePokemonCSV;
+- (void)initAudio;
+- (IBAction)musicBtnPressed:(UIButton * _Null_unspecified)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
