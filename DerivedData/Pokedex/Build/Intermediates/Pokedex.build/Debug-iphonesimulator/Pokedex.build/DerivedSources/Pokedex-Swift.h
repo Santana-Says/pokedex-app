@@ -130,11 +130,14 @@ SWIFT_CLASS("_TtC7Pokedex8PokeCell")
 @class NSIndexPath;
 @class UICollectionViewLayout;
 @class UIButton;
+@class UISearchBar;
 @class NSBundle;
 
 SWIFT_CLASS("_TtC7Pokedex14ViewController")
-@interface ViewController : UIViewController <UIScrollViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate>
+@interface ViewController : UIViewController <UIBarPositioningDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UIScrollViewDelegate, UISearchBarDelegate>
 @property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified collection;
+@property (nonatomic, weak) IBOutlet UISearchBar * _Null_unspecified searchBar;
+@property (nonatomic) BOOL inSearchMode;
 @property (nonatomic, strong) AVAudioPlayer * _Null_unspecified musicPlayer;
 - (void)viewDidLoad;
 - (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
@@ -145,6 +148,8 @@ SWIFT_CLASS("_TtC7Pokedex14ViewController")
 - (void)parsePokemonCSV;
 - (void)initAudio;
 - (IBAction)musicBtnPressed:(UIButton * _Null_unspecified)sender;
+- (void)searchBarSearchButtonClicked:(UISearchBar * _Nonnull)searchBar;
+- (void)searchBar:(UISearchBar * _Nonnull)searchBar textDidChange:(NSString * _Nonnull)searchText;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
