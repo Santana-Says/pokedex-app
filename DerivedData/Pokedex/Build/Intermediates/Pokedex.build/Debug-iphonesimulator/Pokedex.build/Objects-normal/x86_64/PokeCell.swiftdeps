@@ -1,0 +1,412 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "PokeCell"
+provides-nominal:
+- "C7Pokedex8PokeCell"
+provides-member:
+- ["C7Pokedex8PokeCell", ""]
+provides-dynamic-lookup:
+- "nameLbl"
+- "thumbImg"
+depends-top-level:
+- !private "StringLiteralType"
+- "UICollectionViewCell"
+- "Pokemon"
+- "UILabel"
+- "PokeCell"
+- "NSCoder"
+- "UIImageView"
+- !private "UIImage"
+depends-member:
+- !private ["Ps9AnyObject", "UIImage"]
+- !private ["Ps9AnyObject", "capitalizedString"]
+- ["Ps9AnyObject", "configureCell"]
+- !private ["Ps9AnyObject", "cornerRadius"]
+- !private ["Ps9AnyObject", "image"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "layer"]
+- !private ["Ps9AnyObject", "name"]
+- ["Ps9AnyObject", "nameLbl"]
+- !private ["Ps9AnyObject", "pokedexId"]
+- ["Ps9AnyObject", "pokemon"]
+- !private ["Ps9AnyObject", "text"]
+- ["Ps9AnyObject", "thumbImg"]
+- ["Ps9AnyObject", ""]
+- !private ["Sb", "deinit"]
+- !private ["CSo7CALayer", "cornerRadius"]
+- !private ["PSo13CAMediaTiming", "cornerRadius"]
+- !private ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["Ps11CVarArgType", "UIImage"]
+- !private ["Ps11CVarArgType", "capitalizedString"]
+- ["Ps11CVarArgType", "configureCell"]
+- !private ["Ps11CVarArgType", "cornerRadius"]
+- !private ["Ps11CVarArgType", "image"]
+- ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "layer"]
+- ["Ps11CVarArgType", "nameLbl"]
+- ["Ps11CVarArgType", "pokemon"]
+- !private ["Ps11CVarArgType", "text"]
+- ["Ps11CVarArgType", "thumbImg"]
+- ["Ps11CVarArgType", ""]
+- !private ["Vs9Character", "deinit"]
+- !private ["Ps10Comparable", "capitalizedString"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "UIImage"]
+- !private ["Ps28CustomDebugStringConvertible", "capitalizedString"]
+- ["Ps28CustomDebugStringConvertible", "configureCell"]
+- !private ["Ps28CustomDebugStringConvertible", "cornerRadius"]
+- !private ["Ps28CustomDebugStringConvertible", "image"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "layer"]
+- ["Ps28CustomDebugStringConvertible", "nameLbl"]
+- ["Ps28CustomDebugStringConvertible", "pokemon"]
+- !private ["Ps28CustomDebugStringConvertible", "text"]
+- ["Ps28CustomDebugStringConvertible", "thumbImg"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "UIImage"]
+- !private ["Ps23CustomStringConvertible", "capitalizedString"]
+- ["Ps23CustomStringConvertible", "configureCell"]
+- !private ["Ps23CustomStringConvertible", "cornerRadius"]
+- !private ["Ps23CustomStringConvertible", "image"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "layer"]
+- ["Ps23CustomStringConvertible", "nameLbl"]
+- ["Ps23CustomStringConvertible", "pokemon"]
+- !private ["Ps23CustomStringConvertible", "text"]
+- ["Ps23CustomStringConvertible", "thumbImg"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Sd", "deinit"]
+- !private ["Ps9Equatable", "UIImage"]
+- !private ["Ps9Equatable", "capitalizedString"]
+- ["Ps9Equatable", "configureCell"]
+- !private ["Ps9Equatable", "cornerRadius"]
+- !private ["Ps9Equatable", "image"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "layer"]
+- ["Ps9Equatable", "nameLbl"]
+- ["Ps9Equatable", "pokemon"]
+- !private ["Ps9Equatable", "text"]
+- ["Ps9Equatable", "thumbImg"]
+- ["Ps9Equatable", ""]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "capitalizedString"]
+- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Sf", "deinit"]
+- !private ["Ps8Hashable", "UIImage"]
+- !private ["Ps8Hashable", "capitalizedString"]
+- ["Ps8Hashable", "configureCell"]
+- !private ["Ps8Hashable", "cornerRadius"]
+- !private ["Ps8Hashable", "image"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "layer"]
+- ["Ps8Hashable", "nameLbl"]
+- ["Ps8Hashable", "pokemon"]
+- !private ["Ps8Hashable", "text"]
+- ["Ps8Hashable", "thumbImg"]
+- ["Ps8Hashable", ""]
+- !private ["Si", "deinit"]
+- !private ["Vs5Int16", "deinit"]
+- !private ["Vs5Int32", "deinit"]
+- !private ["Vs5Int64", "deinit"]
+- !private ["Vs4Int8", "deinit"]
+- !private ["Ps14MirrorPathType", "capitalizedString"]
+- !private ["Ps14MirrorPathType", "init"]
+- !private ["PSo8NSCoding", "UIImage"]
+- !private ["PSo8NSCoding", "capitalizedString"]
+- ["PSo8NSCoding", "configureCell"]
+- !private ["PSo8NSCoding", "cornerRadius"]
+- !private ["PSo8NSCoding", "image"]
+- ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "layer"]
+- ["PSo8NSCoding", "nameLbl"]
+- ["PSo8NSCoding", "pokemon"]
+- !private ["PSo8NSCoding", "text"]
+- ["PSo8NSCoding", "thumbImg"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "capitalizedString"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo16NSMutableCopying", "capitalizedString"]
+- !private ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "NSCoder"]
+- ["CSo8NSObject", "Pokemon"]
+- !private ["CSo8NSObject", "UIImage"]
+- ["CSo8NSObject", "UIImageView"]
+- ["CSo8NSObject", "UILabel"]
+- !private ["CSo8NSObject", "capitalizedString"]
+- ["CSo8NSObject", "configureCell"]
+- !private ["CSo8NSObject", "cornerRadius"]
+- !private ["CSo8NSObject", "image"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "layer"]
+- ["CSo8NSObject", "nameLbl"]
+- ["CSo8NSObject", "pokemon"]
+- !private ["CSo8NSObject", "text"]
+- ["CSo8NSObject", "thumbImg"]
+- !private ["PSo16NSObjectProtocol", "UIImage"]
+- !private ["PSo16NSObjectProtocol", "capitalizedString"]
+- ["PSo16NSObjectProtocol", "configureCell"]
+- !private ["PSo16NSObjectProtocol", "cornerRadius"]
+- !private ["PSo16NSObjectProtocol", "image"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "layer"]
+- ["PSo16NSObjectProtocol", "nameLbl"]
+- ["PSo16NSObjectProtocol", "pokemon"]
+- !private ["PSo16NSObjectProtocol", "text"]
+- ["PSo16NSObjectProtocol", "thumbImg"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "capitalizedString"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "capitalizedString"]
+- !private ["CSo8NSString", "init"]
+- !private ["Ps16OutputStreamType", "capitalizedString"]
+- !private ["Ps16OutputStreamType", "init"]
+- ["C7Pokedex8PokeCell", "NSCoder"]
+- ["C7Pokedex8PokeCell", "Pokemon"]
+- !private ["C7Pokedex8PokeCell", "UIImage"]
+- ["C7Pokedex8PokeCell", "UIImageView"]
+- ["C7Pokedex8PokeCell", "UILabel"]
+- ["C7Pokedex8PokeCell", "configureCell"]
+- ["C7Pokedex8PokeCell", "deinit"]
+- ["C7Pokedex8PokeCell", "init"]
+- !private ["C7Pokedex8PokeCell", "layer"]
+- ["C7Pokedex8PokeCell", "nameLbl"]
+- ["C7Pokedex8PokeCell", "pokemon"]
+- ["C7Pokedex8PokeCell", "thumbImg"]
+- !private ["C7Pokedex7Pokemon", "name"]
+- !private ["C7Pokedex7Pokemon", "pokedexId"]
+- !private ["Vs12StaticString", "deinit"]
+- !private ["Ps10Streamable", "capitalizedString"]
+- !private ["Ps10Streamable", "init"]
+- !private ["SS", "capitalizedString"]
+- !private ["SS", "init"]
+- !private ["Ps30StringInterpolationConvertible", "capitalizedString"]
+- !private ["Ps30StringInterpolationConvertible", "init"]
+- !private ["Ps24StringLiteralConvertible", "capitalizedString"]
+- !private ["Ps24StringLiteralConvertible", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "UIImage"]
+- ["PSo29UIAccessibilityIdentification", "configureCell"]
+- !private ["PSo29UIAccessibilityIdentification", "image"]
+- ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "layer"]
+- ["PSo29UIAccessibilityIdentification", "nameLbl"]
+- ["PSo29UIAccessibilityIdentification", "pokemon"]
+- !private ["PSo29UIAccessibilityIdentification", "text"]
+- ["PSo29UIAccessibilityIdentification", "thumbImg"]
+- ["PSo29UIAccessibilityIdentification", ""]
+- !private ["PSo12UIAppearance", "UIImage"]
+- ["PSo12UIAppearance", "configureCell"]
+- !private ["PSo12UIAppearance", "image"]
+- ["PSo12UIAppearance", "init"]
+- !private ["PSo12UIAppearance", "layer"]
+- ["PSo12UIAppearance", "nameLbl"]
+- ["PSo12UIAppearance", "pokemon"]
+- !private ["PSo12UIAppearance", "text"]
+- ["PSo12UIAppearance", "thumbImg"]
+- ["PSo12UIAppearance", ""]
+- !private ["PSo21UIAppearanceContainer", "UIImage"]
+- ["PSo21UIAppearanceContainer", "configureCell"]
+- !private ["PSo21UIAppearanceContainer", "image"]
+- ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "layer"]
+- ["PSo21UIAppearanceContainer", "nameLbl"]
+- ["PSo21UIAppearanceContainer", "pokemon"]
+- !private ["PSo21UIAppearanceContainer", "text"]
+- ["PSo21UIAppearanceContainer", "thumbImg"]
+- ["PSo21UIAppearanceContainer", ""]
+- ["CSo24UICollectionReusableView", "NSCoder"]
+- ["CSo24UICollectionReusableView", "Pokemon"]
+- !private ["CSo24UICollectionReusableView", "UIImage"]
+- ["CSo24UICollectionReusableView", "UIImageView"]
+- ["CSo24UICollectionReusableView", "UILabel"]
+- ["CSo24UICollectionReusableView", "configureCell"]
+- ["CSo24UICollectionReusableView", "init"]
+- !private ["CSo24UICollectionReusableView", "layer"]
+- ["CSo24UICollectionReusableView", "nameLbl"]
+- ["CSo24UICollectionReusableView", "pokemon"]
+- ["CSo24UICollectionReusableView", "thumbImg"]
+- ["CSo20UICollectionViewCell", "NSCoder"]
+- ["CSo20UICollectionViewCell", "Pokemon"]
+- !private ["CSo20UICollectionViewCell", "UIImage"]
+- ["CSo20UICollectionViewCell", "UIImageView"]
+- ["CSo20UICollectionViewCell", "UILabel"]
+- ["CSo20UICollectionViewCell", "configureCell"]
+- ["CSo20UICollectionViewCell", "init"]
+- !private ["CSo20UICollectionViewCell", "layer"]
+- ["CSo20UICollectionViewCell", "nameLbl"]
+- ["CSo20UICollectionViewCell", "pokemon"]
+- ["CSo20UICollectionViewCell", "thumbImg"]
+- ["CSo20UICollectionViewCell", ""]
+- !private ["PSo17UICoordinateSpace", "UIImage"]
+- ["PSo17UICoordinateSpace", "configureCell"]
+- !private ["PSo17UICoordinateSpace", "image"]
+- ["PSo17UICoordinateSpace", "init"]
+- !private ["PSo17UICoordinateSpace", "layer"]
+- ["PSo17UICoordinateSpace", "nameLbl"]
+- ["PSo17UICoordinateSpace", "pokemon"]
+- !private ["PSo17UICoordinateSpace", "text"]
+- ["PSo17UICoordinateSpace", "thumbImg"]
+- ["PSo17UICoordinateSpace", ""]
+- !private ["PSo13UIDynamicItem", "UIImage"]
+- ["PSo13UIDynamicItem", "configureCell"]
+- !private ["PSo13UIDynamicItem", "image"]
+- ["PSo13UIDynamicItem", "init"]
+- !private ["PSo13UIDynamicItem", "layer"]
+- ["PSo13UIDynamicItem", "nameLbl"]
+- ["PSo13UIDynamicItem", "pokemon"]
+- !private ["PSo13UIDynamicItem", "text"]
+- ["PSo13UIDynamicItem", "thumbImg"]
+- ["PSo13UIDynamicItem", ""]
+- !private ["PSo18UIFocusEnvironment", "UIImage"]
+- ["PSo18UIFocusEnvironment", "configureCell"]
+- !private ["PSo18UIFocusEnvironment", "image"]
+- ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "layer"]
+- ["PSo18UIFocusEnvironment", "nameLbl"]
+- ["PSo18UIFocusEnvironment", "pokemon"]
+- !private ["PSo18UIFocusEnvironment", "text"]
+- ["PSo18UIFocusEnvironment", "thumbImg"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["CSo7UIImage", "init"]
+- !private ["CSo11UIImageView", "image"]
+- !private ["CSo7UILabel", "text"]
+- ["CSo11UIResponder", "NSCoder"]
+- ["CSo11UIResponder", "Pokemon"]
+- !private ["CSo11UIResponder", "UIImage"]
+- ["CSo11UIResponder", "UIImageView"]
+- ["CSo11UIResponder", "UILabel"]
+- ["CSo11UIResponder", "configureCell"]
+- !private ["CSo11UIResponder", "image"]
+- ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "layer"]
+- ["CSo11UIResponder", "nameLbl"]
+- ["CSo11UIResponder", "pokemon"]
+- !private ["CSo11UIResponder", "text"]
+- ["CSo11UIResponder", "thumbImg"]
+- !private ["PSo18UITraitEnvironment", "UIImage"]
+- ["PSo18UITraitEnvironment", "configureCell"]
+- !private ["PSo18UITraitEnvironment", "image"]
+- ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "layer"]
+- ["PSo18UITraitEnvironment", "nameLbl"]
+- ["PSo18UITraitEnvironment", "pokemon"]
+- !private ["PSo18UITraitEnvironment", "text"]
+- ["PSo18UITraitEnvironment", "thumbImg"]
+- ["PSo18UITraitEnvironment", ""]
+- ["CSo6UIView", "NSCoder"]
+- ["CSo6UIView", "Pokemon"]
+- !private ["CSo6UIView", "UIImage"]
+- ["CSo6UIView", "UIImageView"]
+- ["CSo6UIView", "UILabel"]
+- ["CSo6UIView", "configureCell"]
+- !private ["CSo6UIView", "image"]
+- ["CSo6UIView", "init"]
+- !private ["CSo6UIView", "layer"]
+- ["CSo6UIView", "nameLbl"]
+- ["CSo6UIView", "pokemon"]
+- !private ["CSo6UIView", "text"]
+- ["CSo6UIView", "thumbImg"]
+- !private ["Su", "deinit"]
+- !private ["Vs6UInt16", "deinit"]
+- !private ["Vs6UInt32", "deinit"]
+- !private ["Vs6UInt64", "deinit"]
+- !private ["Vs5UInt8", "deinit"]
+- !private ["Sc", "deinit"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "capitalizedString"]
+- !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
+- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "capitalizedString"]
+- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["Ps32_BuiltinStringLiteralConvertible", "capitalizedString"]
+- !private ["Ps32_BuiltinStringLiteralConvertible", "init"]
+- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "capitalizedString"]
+- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "init"]
+- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "capitalizedString"]
+- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- !private ["Ps24_ImageLiteralConvertible", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "capitalizedString"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps12_Reflectable", "UIImage"]
+- !private ["Ps12_Reflectable", "capitalizedString"]
+- ["Ps12_Reflectable", "configureCell"]
+- !private ["Ps12_Reflectable", "image"]
+- ["Ps12_Reflectable", "init"]
+- !private ["Ps12_Reflectable", "layer"]
+- ["Ps12_Reflectable", "nameLbl"]
+- ["Ps12_Reflectable", "pokemon"]
+- !private ["Ps12_Reflectable", "text"]
+- ["Ps12_Reflectable", "thumbImg"]
+- ["Ps12_Reflectable", ""]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Sb"
+- !private "CSo7CALayer"
+- !private "PSo13CAMediaTiming"
+- !private "V12CoreGraphics7CGFloat"
+- "Ps11CVarArgType"
+- !private "Vs9Character"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- !private "Sd"
+- "Ps9Equatable"
+- !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
+- !private "Sf"
+- "Ps8Hashable"
+- !private "Si"
+- !private "Vs5Int16"
+- !private "Vs5Int32"
+- !private "Vs5Int64"
+- !private "Vs4Int8"
+- !private "Ps14MirrorPathType"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "Ps16OutputStreamType"
+- "C7Pokedex8PokeCell"
+- !private "C7Pokedex7Pokemon"
+- !private "Vs12StaticString"
+- !private "Ps10Streamable"
+- !private "SS"
+- !private "Ps30StringInterpolationConvertible"
+- !private "Ps24StringLiteralConvertible"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "CSo24UICollectionReusableView"
+- "CSo20UICollectionViewCell"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- !private "CSo7UIImage"
+- !private "CSo11UIImageView"
+- !private "CSo7UILabel"
+- "CSo11UIResponder"
+- "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- !private "Su"
+- !private "Vs6UInt16"
+- !private "Vs6UInt32"
+- !private "Vs6UInt64"
+- !private "Vs5UInt8"
+- !private "Sc"
+- !private "Ps31UnicodeScalarLiteralConvertible"
+- !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "Ps32_BuiltinStringLiteralConvertible"
+- !private "Ps37_BuiltinUTF16StringLiteralConvertible"
+- !private "Ps39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "Ps24_ImageLiteralConvertible"
+- !private "Ps21_ObjectiveCBridgeable"
+- "Ps12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+interface-hash: "7d168660aec436815c08f9f3c98c093a"
