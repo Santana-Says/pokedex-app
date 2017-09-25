@@ -6,52 +6,56 @@ provides-nominal:
 provides-member:
 - ["C7Pokedex14ViewController", ""]
 provides-dynamic-lookup:
-- "parsePokemonCSV"
-- "numberOfSectionsInCollectionView"
-- "viewDidLoad"
-- "initAudio"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "searchBar"
-- "searchBar"
-- "inSearchMode"
-- "musicBtnPressed"
 - "musicPlayer"
-- "searchBarSearchButtonClicked"
+- "numberOfSectionsInCollectionView"
 - "collection"
+- "inSearchMode"
+- "searchBarSearchButtonClicked"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "musicBtnPressed"
+- "prepareForSegue"
+- "searchBar"
+- "searchBar"
+- "initAudio"
+- "parsePokemonCSV"
+- "viewDidLoad"
 depends-top-level:
-- "UIButton"
-- "UICollectionViewCell"
-- !private "=="
-- "ViewController"
+- "UICollectionViewDelegateFlowLayout"
+- !private "UIReturnKeyType"
+- "UICollectionViewDataSource"
+- !private "NSURL"
 - "NSIndexPath"
-- !private "||"
+- "UICollectionViewDelegate"
+- !private "=="
+- "AVAudioPlayer"
+- "UIButton"
+- "UIStoryboardSegue"
+- !private "!="
+- "Int"
+- "UICollectionView"
 - !private "StringLiteralType"
 - "UISearchBar"
-- !private "PokeCell"
-- "UICollectionView"
-- !private "NSBundle"
-- !private "CGSizeMake"
-- "UICollectionViewDelegate"
-- !private "NSError"
-- "UICollectionViewDataSource"
-- "String"
 - "UIViewController"
-- "UICollectionViewDelegateFlowLayout"
-- !private "print"
-- "UISearchBarDelegate"
-- "Int"
 - "CGSize"
+- "UISearchBarDelegate"
 - !private "CSV"
-- !private "!="
-- !private "NSURL"
-- "Pokemon"
-- "BooleanLiteralType"
-- "AVAudioPlayer"
+- "AnyObject"
+- !private "||"
+- !private "PokeCell"
+- !private "CGSizeMake"
+- "String"
+- !private "NSBundle"
+- !private "print"
+- !private "PokemonDetailVC"
+- !private "NSError"
+- "UICollectionViewCell"
 - "UICollectionViewLayout"
-- !private "UIReturnKeyType"
+- "BooleanLiteralType"
+- "ViewController"
+- "Pokemon"
 depends-member:
 - !private ["CSo13AVAudioPlayer", "init"]
 - !private ["CSo13AVAudioPlayer", "numberOfLoops"]
@@ -76,8 +80,10 @@ depends-member:
 - !private ["Ps9AnyObject", "debugDescription"]
 - !private ["Ps9AnyObject", "delegate"]
 - !private ["Ps9AnyObject", "dequeueReusableCellWithReuseIdentifier"]
+- !private ["Ps9AnyObject", "destinationViewController"]
 - !private ["Ps9AnyObject", "endEditing"]
 - ["Ps9AnyObject", "filteredPokemon"]
+- !private ["Ps9AnyObject", "identifier"]
 - ["Ps9AnyObject", "inSearchMode"]
 - ["Ps9AnyObject", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["Ps9AnyObject", "init"]
@@ -91,10 +97,12 @@ depends-member:
 - ["Ps9AnyObject", "numberOfSectionsInCollectionView"]
 - ["Ps9AnyObject", "parsePokemonCSV"]
 - !private ["Ps9AnyObject", "pathForResource"]
+- !private ["Ps9AnyObject", "performSegueWithIdentifier"]
 - !private ["Ps9AnyObject", "play"]
 - !private ["Ps9AnyObject", "playing"]
 - ["Ps9AnyObject", "pokemon"]
 - ["Ps9AnyObject", "positionForBar"]
+- ["Ps9AnyObject", "prepareForSegue"]
 - !private ["Ps9AnyObject", "prepareToPlay"]
 - !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "rangeOfString"]
@@ -181,8 +189,10 @@ depends-member:
 - !private ["Ps11CVarArgType", "debugDescription"]
 - !private ["Ps11CVarArgType", "delegate"]
 - !private ["Ps11CVarArgType", "dequeueReusableCellWithReuseIdentifier"]
+- !private ["Ps11CVarArgType", "destinationViewController"]
 - !private ["Ps11CVarArgType", "endEditing"]
 - ["Ps11CVarArgType", "filteredPokemon"]
+- !private ["Ps11CVarArgType", "identifier"]
 - ["Ps11CVarArgType", "inSearchMode"]
 - ["Ps11CVarArgType", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["Ps11CVarArgType", "init"]
@@ -195,10 +205,12 @@ depends-member:
 - ["Ps11CVarArgType", "numberOfSectionsInCollectionView"]
 - ["Ps11CVarArgType", "parsePokemonCSV"]
 - !private ["Ps11CVarArgType", "pathForResource"]
+- !private ["Ps11CVarArgType", "performSegueWithIdentifier"]
 - !private ["Ps11CVarArgType", "play"]
 - !private ["Ps11CVarArgType", "playing"]
 - ["Ps11CVarArgType", "pokemon"]
 - ["Ps11CVarArgType", "positionForBar"]
+- ["Ps11CVarArgType", "prepareForSegue"]
 - !private ["Ps11CVarArgType", "prepareToPlay"]
 - !private ["Ps11CVarArgType", "print"]
 - !private ["Ps11CVarArgType", "rangeOfString"]
@@ -270,9 +282,11 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "debugDescription"]
 - !private ["Ps28CustomDebugStringConvertible", "delegate"]
 - !private ["Ps28CustomDebugStringConvertible", "dequeueReusableCellWithReuseIdentifier"]
+- !private ["Ps28CustomDebugStringConvertible", "destinationViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "endEditing"]
 - !private ["Ps28CustomDebugStringConvertible", "filter"]
 - ["Ps28CustomDebugStringConvertible", "filteredPokemon"]
+- !private ["Ps28CustomDebugStringConvertible", "identifier"]
 - ["Ps28CustomDebugStringConvertible", "inSearchMode"]
 - ["Ps28CustomDebugStringConvertible", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["Ps28CustomDebugStringConvertible", "init"]
@@ -285,10 +299,12 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "numberOfSectionsInCollectionView"]
 - ["Ps28CustomDebugStringConvertible", "parsePokemonCSV"]
 - !private ["Ps28CustomDebugStringConvertible", "pathForResource"]
+- !private ["Ps28CustomDebugStringConvertible", "performSegueWithIdentifier"]
 - !private ["Ps28CustomDebugStringConvertible", "play"]
 - !private ["Ps28CustomDebugStringConvertible", "playing"]
 - ["Ps28CustomDebugStringConvertible", "pokemon"]
 - ["Ps28CustomDebugStringConvertible", "positionForBar"]
+- ["Ps28CustomDebugStringConvertible", "prepareForSegue"]
 - !private ["Ps28CustomDebugStringConvertible", "prepareToPlay"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
 - !private ["Ps28CustomDebugStringConvertible", "rangeOfString"]
@@ -349,9 +365,11 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "debugDescription"]
 - !private ["Ps23CustomStringConvertible", "delegate"]
 - !private ["Ps23CustomStringConvertible", "dequeueReusableCellWithReuseIdentifier"]
+- !private ["Ps23CustomStringConvertible", "destinationViewController"]
 - !private ["Ps23CustomStringConvertible", "endEditing"]
 - !private ["Ps23CustomStringConvertible", "filter"]
 - ["Ps23CustomStringConvertible", "filteredPokemon"]
+- !private ["Ps23CustomStringConvertible", "identifier"]
 - ["Ps23CustomStringConvertible", "inSearchMode"]
 - ["Ps23CustomStringConvertible", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["Ps23CustomStringConvertible", "init"]
@@ -364,10 +382,12 @@ depends-member:
 - ["Ps23CustomStringConvertible", "numberOfSectionsInCollectionView"]
 - ["Ps23CustomStringConvertible", "parsePokemonCSV"]
 - !private ["Ps23CustomStringConvertible", "pathForResource"]
+- !private ["Ps23CustomStringConvertible", "performSegueWithIdentifier"]
 - !private ["Ps23CustomStringConvertible", "play"]
 - !private ["Ps23CustomStringConvertible", "playing"]
 - ["Ps23CustomStringConvertible", "pokemon"]
 - ["Ps23CustomStringConvertible", "positionForBar"]
+- ["Ps23CustomStringConvertible", "prepareForSegue"]
 - !private ["Ps23CustomStringConvertible", "prepareToPlay"]
 - !private ["Ps23CustomStringConvertible", "print"]
 - !private ["Ps23CustomStringConvertible", "rangeOfString"]
@@ -428,8 +448,10 @@ depends-member:
 - !private ["Ps9Equatable", "debugDescription"]
 - !private ["Ps9Equatable", "delegate"]
 - !private ["Ps9Equatable", "dequeueReusableCellWithReuseIdentifier"]
+- !private ["Ps9Equatable", "destinationViewController"]
 - !private ["Ps9Equatable", "endEditing"]
 - ["Ps9Equatable", "filteredPokemon"]
+- !private ["Ps9Equatable", "identifier"]
 - ["Ps9Equatable", "inSearchMode"]
 - ["Ps9Equatable", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["Ps9Equatable", "init"]
@@ -442,10 +464,12 @@ depends-member:
 - ["Ps9Equatable", "numberOfSectionsInCollectionView"]
 - ["Ps9Equatable", "parsePokemonCSV"]
 - !private ["Ps9Equatable", "pathForResource"]
+- !private ["Ps9Equatable", "performSegueWithIdentifier"]
 - !private ["Ps9Equatable", "play"]
 - !private ["Ps9Equatable", "playing"]
 - ["Ps9Equatable", "pokemon"]
 - ["Ps9Equatable", "positionForBar"]
+- ["Ps9Equatable", "prepareForSegue"]
 - !private ["Ps9Equatable", "prepareToPlay"]
 - !private ["Ps9Equatable", "print"]
 - !private ["Ps9Equatable", "rangeOfString"]
@@ -507,8 +531,10 @@ depends-member:
 - !private ["Ps8Hashable", "debugDescription"]
 - !private ["Ps8Hashable", "delegate"]
 - !private ["Ps8Hashable", "dequeueReusableCellWithReuseIdentifier"]
+- !private ["Ps8Hashable", "destinationViewController"]
 - !private ["Ps8Hashable", "endEditing"]
 - ["Ps8Hashable", "filteredPokemon"]
+- !private ["Ps8Hashable", "identifier"]
 - ["Ps8Hashable", "inSearchMode"]
 - ["Ps8Hashable", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["Ps8Hashable", "init"]
@@ -521,10 +547,12 @@ depends-member:
 - ["Ps8Hashable", "numberOfSectionsInCollectionView"]
 - ["Ps8Hashable", "parsePokemonCSV"]
 - !private ["Ps8Hashable", "pathForResource"]
+- !private ["Ps8Hashable", "performSegueWithIdentifier"]
 - !private ["Ps8Hashable", "play"]
 - !private ["Ps8Hashable", "playing"]
 - ["Ps8Hashable", "pokemon"]
 - ["Ps8Hashable", "positionForBar"]
+- ["Ps8Hashable", "prepareForSegue"]
 - !private ["Ps8Hashable", "prepareToPlay"]
 - !private ["Ps8Hashable", "print"]
 - !private ["Ps8Hashable", "rangeOfString"]
@@ -642,8 +670,10 @@ depends-member:
 - ["PSo8NSCoding", "musicPlayer"]
 - ["PSo8NSCoding", "numberOfSectionsInCollectionView"]
 - ["PSo8NSCoding", "parsePokemonCSV"]
+- !private ["PSo8NSCoding", "performSegueWithIdentifier"]
 - ["PSo8NSCoding", "pokemon"]
 - ["PSo8NSCoding", "positionForBar"]
+- ["PSo8NSCoding", "prepareForSegue"]
 - !private ["PSo8NSCoding", "print"]
 - !private ["PSo8NSCoding", "rangeOfString"]
 - !private ["PSo8NSCoding", "reloadData"]
@@ -701,8 +731,10 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "musicPlayer"]
 - ["PSo26NSExtensionRequestHandling", "numberOfSectionsInCollectionView"]
 - ["PSo26NSExtensionRequestHandling", "parsePokemonCSV"]
+- !private ["PSo26NSExtensionRequestHandling", "performSegueWithIdentifier"]
 - ["PSo26NSExtensionRequestHandling", "pokemon"]
 - ["PSo26NSExtensionRequestHandling", "positionForBar"]
+- ["PSo26NSExtensionRequestHandling", "prepareForSegue"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndDecelerating"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndDragging"]
@@ -733,6 +765,7 @@ depends-member:
 - !private ["PSo16NSMutableCopying", "lowercaseString"]
 - !private ["PSo16NSMutableCopying", "rangeOfString"]
 - ["CSo8NSObject", "AVAudioPlayer"]
+- ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "CGSize"]
 - !private ["CSo8NSObject", "CGSizeMake"]
 - !private ["CSo8NSObject", "CSV"]
@@ -743,6 +776,7 @@ depends-member:
 - !private ["CSo8NSObject", "NSURL"]
 - !private ["CSo8NSObject", "PokeCell"]
 - ["CSo8NSObject", "Pokemon"]
+- !private ["CSo8NSObject", "PokemonDetailVC"]
 - ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "UIButton"]
 - ["CSo8NSObject", "UICollectionView"]
@@ -750,6 +784,7 @@ depends-member:
 - ["CSo8NSObject", "UICollectionViewLayout"]
 - !private ["CSo8NSObject", "UIReturnKeyType"]
 - ["CSo8NSObject", "UISearchBar"]
+- ["CSo8NSObject", "UIStoryboardSegue"]
 - !private ["CSo8NSObject", "alpha"]
 - ["CSo8NSObject", "collection"]
 - ["CSo8NSObject", "collectionView"]
@@ -758,8 +793,10 @@ depends-member:
 - !private ["CSo8NSObject", "debugDescription"]
 - !private ["CSo8NSObject", "delegate"]
 - !private ["CSo8NSObject", "dequeueReusableCellWithReuseIdentifier"]
+- !private ["CSo8NSObject", "destinationViewController"]
 - !private ["CSo8NSObject", "endEditing"]
 - ["CSo8NSObject", "filteredPokemon"]
+- !private ["CSo8NSObject", "identifier"]
 - ["CSo8NSObject", "inSearchMode"]
 - ["CSo8NSObject", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["CSo8NSObject", "init"]
@@ -772,10 +809,12 @@ depends-member:
 - ["CSo8NSObject", "numberOfSectionsInCollectionView"]
 - ["CSo8NSObject", "parsePokemonCSV"]
 - !private ["CSo8NSObject", "pathForResource"]
+- !private ["CSo8NSObject", "performSegueWithIdentifier"]
 - !private ["CSo8NSObject", "play"]
 - !private ["CSo8NSObject", "playing"]
 - ["CSo8NSObject", "pokemon"]
 - ["CSo8NSObject", "positionForBar"]
+- ["CSo8NSObject", "prepareForSegue"]
 - !private ["CSo8NSObject", "prepareToPlay"]
 - !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "rangeOfString"]
@@ -825,8 +864,10 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "debugDescription"]
 - !private ["PSo16NSObjectProtocol", "delegate"]
 - !private ["PSo16NSObjectProtocol", "dequeueReusableCellWithReuseIdentifier"]
+- !private ["PSo16NSObjectProtocol", "destinationViewController"]
 - !private ["PSo16NSObjectProtocol", "endEditing"]
 - ["PSo16NSObjectProtocol", "filteredPokemon"]
+- !private ["PSo16NSObjectProtocol", "identifier"]
 - ["PSo16NSObjectProtocol", "inSearchMode"]
 - ["PSo16NSObjectProtocol", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["PSo16NSObjectProtocol", "init"]
@@ -839,10 +880,12 @@ depends-member:
 - ["PSo16NSObjectProtocol", "numberOfSectionsInCollectionView"]
 - ["PSo16NSObjectProtocol", "parsePokemonCSV"]
 - !private ["PSo16NSObjectProtocol", "pathForResource"]
+- !private ["PSo16NSObjectProtocol", "performSegueWithIdentifier"]
 - !private ["PSo16NSObjectProtocol", "play"]
 - !private ["PSo16NSObjectProtocol", "playing"]
 - ["PSo16NSObjectProtocol", "pokemon"]
 - ["PSo16NSObjectProtocol", "positionForBar"]
+- ["PSo16NSObjectProtocol", "prepareForSegue"]
 - !private ["PSo16NSObjectProtocol", "prepareToPlay"]
 - !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "rangeOfString"]
@@ -893,6 +936,7 @@ depends-member:
 - ["C7Pokedex7Pokemon", "deinit"]
 - !private ["C7Pokedex7Pokemon", "init"]
 - !private ["C7Pokedex7Pokemon", "name"]
+- !private ["C7Pokedex15PokemonDetailVC", "pokemon"]
 - ["Ps21RandomAccessIndexType", "Distance"]
 - ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
 - !private ["Ps21RandomAccessIndexType", "init"]
@@ -983,8 +1027,10 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "musicPlayer"]
 - ["PSo21UIAppearanceContainer", "numberOfSectionsInCollectionView"]
 - ["PSo21UIAppearanceContainer", "parsePokemonCSV"]
+- !private ["PSo21UIAppearanceContainer", "performSegueWithIdentifier"]
 - ["PSo21UIAppearanceContainer", "pokemon"]
 - ["PSo21UIAppearanceContainer", "positionForBar"]
+- ["PSo21UIAppearanceContainer", "prepareForSegue"]
 - !private ["PSo21UIAppearanceContainer", "print"]
 - !private ["PSo21UIAppearanceContainer", "reloadData"]
 - !private ["PSo21UIAppearanceContainer", "returnKeyType"]
@@ -1035,6 +1081,7 @@ depends-member:
 - !private ["PSo24UIBarPositioningDelegate", "musicPlayer"]
 - ["PSo24UIBarPositioningDelegate", "numberOfSectionsInCollectionView"]
 - !private ["PSo24UIBarPositioningDelegate", "parsePokemonCSV"]
+- !private ["PSo24UIBarPositioningDelegate", "performSegueWithIdentifier"]
 - !private ["PSo24UIBarPositioningDelegate", "pokemon"]
 - ["PSo24UIBarPositioningDelegate", "positionForBar"]
 - !private ["PSo24UIBarPositioningDelegate", "print"]
@@ -1090,6 +1137,7 @@ depends-member:
 - !private ["PSo26UICollectionViewDataSource", "musicPlayer"]
 - ["PSo26UICollectionViewDataSource", "numberOfSectionsInCollectionView"]
 - !private ["PSo26UICollectionViewDataSource", "parsePokemonCSV"]
+- !private ["PSo26UICollectionViewDataSource", "performSegueWithIdentifier"]
 - !private ["PSo26UICollectionViewDataSource", "pokemon"]
 - ["PSo26UICollectionViewDataSource", "positionForBar"]
 - !private ["PSo26UICollectionViewDataSource", "print"]
@@ -1135,6 +1183,7 @@ depends-member:
 - !private ["PSo24UICollectionViewDelegate", "musicPlayer"]
 - ["PSo24UICollectionViewDelegate", "numberOfSectionsInCollectionView"]
 - !private ["PSo24UICollectionViewDelegate", "parsePokemonCSV"]
+- !private ["PSo24UICollectionViewDelegate", "performSegueWithIdentifier"]
 - !private ["PSo24UICollectionViewDelegate", "pokemon"]
 - ["PSo24UICollectionViewDelegate", "positionForBar"]
 - !private ["PSo24UICollectionViewDelegate", "print"]
@@ -1180,6 +1229,7 @@ depends-member:
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "musicPlayer"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "numberOfSectionsInCollectionView"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "parsePokemonCSV"]
+- !private ["PSo34UICollectionViewDelegateFlowLayout", "performSegueWithIdentifier"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "pokemon"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "positionForBar"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "print"]
@@ -1227,8 +1277,10 @@ depends-member:
 - ["PSo18UIContentContainer", "musicPlayer"]
 - ["PSo18UIContentContainer", "numberOfSectionsInCollectionView"]
 - ["PSo18UIContentContainer", "parsePokemonCSV"]
+- !private ["PSo18UIContentContainer", "performSegueWithIdentifier"]
 - ["PSo18UIContentContainer", "pokemon"]
 - ["PSo18UIContentContainer", "positionForBar"]
+- ["PSo18UIContentContainer", "prepareForSegue"]
 - !private ["PSo18UIContentContainer", "print"]
 - ["PSo18UIContentContainer", "scrollViewDidEndDecelerating"]
 - ["PSo18UIContentContainer", "scrollViewDidEndDragging"]
@@ -1302,8 +1354,10 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "musicPlayer"]
 - ["PSo18UIFocusEnvironment", "numberOfSectionsInCollectionView"]
 - ["PSo18UIFocusEnvironment", "parsePokemonCSV"]
+- !private ["PSo18UIFocusEnvironment", "performSegueWithIdentifier"]
 - ["PSo18UIFocusEnvironment", "pokemon"]
 - ["PSo18UIFocusEnvironment", "positionForBar"]
+- ["PSo18UIFocusEnvironment", "prepareForSegue"]
 - !private ["PSo18UIFocusEnvironment", "print"]
 - !private ["PSo18UIFocusEnvironment", "reloadData"]
 - !private ["PSo18UIFocusEnvironment", "returnKeyType"]
@@ -1334,6 +1388,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "viewForZoomingInScrollView"]
 - ["PSo18UIFocusEnvironment", ""]
 - ["CSo11UIResponder", "AVAudioPlayer"]
+- ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "CGSize"]
 - !private ["CSo11UIResponder", "CGSizeMake"]
 - !private ["CSo11UIResponder", "CSV"]
@@ -1344,6 +1399,7 @@ depends-member:
 - !private ["CSo11UIResponder", "NSURL"]
 - !private ["CSo11UIResponder", "PokeCell"]
 - ["CSo11UIResponder", "Pokemon"]
+- !private ["CSo11UIResponder", "PokemonDetailVC"]
 - ["CSo11UIResponder", "String"]
 - ["CSo11UIResponder", "UIButton"]
 - ["CSo11UIResponder", "UICollectionView"]
@@ -1351,6 +1407,7 @@ depends-member:
 - ["CSo11UIResponder", "UICollectionViewLayout"]
 - !private ["CSo11UIResponder", "UIReturnKeyType"]
 - ["CSo11UIResponder", "UISearchBar"]
+- ["CSo11UIResponder", "UIStoryboardSegue"]
 - !private ["CSo11UIResponder", "alpha"]
 - ["CSo11UIResponder", "collection"]
 - ["CSo11UIResponder", "collectionView"]
@@ -1368,8 +1425,10 @@ depends-member:
 - ["CSo11UIResponder", "musicPlayer"]
 - ["CSo11UIResponder", "numberOfSectionsInCollectionView"]
 - ["CSo11UIResponder", "parsePokemonCSV"]
+- !private ["CSo11UIResponder", "performSegueWithIdentifier"]
 - ["CSo11UIResponder", "pokemon"]
 - ["CSo11UIResponder", "positionForBar"]
+- ["CSo11UIResponder", "prepareForSegue"]
 - !private ["CSo11UIResponder", "print"]
 - !private ["CSo11UIResponder", "reloadData"]
 - !private ["CSo11UIResponder", "returnKeyType"]
@@ -1421,6 +1480,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "musicPlayer"]
 - ["PSo20UIScrollViewDelegate", "numberOfSectionsInCollectionView"]
 - !private ["PSo20UIScrollViewDelegate", "parsePokemonCSV"]
+- !private ["PSo20UIScrollViewDelegate", "performSegueWithIdentifier"]
 - !private ["PSo20UIScrollViewDelegate", "pokemon"]
 - ["PSo20UIScrollViewDelegate", "positionForBar"]
 - !private ["PSo20UIScrollViewDelegate", "print"]
@@ -1469,6 +1529,7 @@ depends-member:
 - !private ["PSo19UISearchBarDelegate", "musicPlayer"]
 - ["PSo19UISearchBarDelegate", "numberOfSectionsInCollectionView"]
 - !private ["PSo19UISearchBarDelegate", "parsePokemonCSV"]
+- !private ["PSo19UISearchBarDelegate", "performSegueWithIdentifier"]
 - !private ["PSo19UISearchBarDelegate", "pokemon"]
 - ["PSo19UISearchBarDelegate", "positionForBar"]
 - !private ["PSo19UISearchBarDelegate", "print"]
@@ -1516,8 +1577,10 @@ depends-member:
 - ["PSo16UIStateRestoring", "musicPlayer"]
 - ["PSo16UIStateRestoring", "numberOfSectionsInCollectionView"]
 - ["PSo16UIStateRestoring", "parsePokemonCSV"]
+- !private ["PSo16UIStateRestoring", "performSegueWithIdentifier"]
 - ["PSo16UIStateRestoring", "pokemon"]
 - ["PSo16UIStateRestoring", "positionForBar"]
+- ["PSo16UIStateRestoring", "prepareForSegue"]
 - !private ["PSo16UIStateRestoring", "print"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndDecelerating"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndDragging"]
@@ -1544,6 +1607,8 @@ depends-member:
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", "viewForZoomingInScrollView"]
 - ["PSo16UIStateRestoring", ""]
+- !private ["CSo17UIStoryboardSegue", "destinationViewController"]
+- !private ["CSo17UIStoryboardSegue", "identifier"]
 - !private ["PSo17UITextInputTraits", "delegate"]
 - !private ["PSo17UITextInputTraits", "returnKeyType"]
 - !private ["PSo17UITextInputTraits", "text"]
@@ -1573,8 +1638,10 @@ depends-member:
 - ["PSo18UITraitEnvironment", "musicPlayer"]
 - ["PSo18UITraitEnvironment", "numberOfSectionsInCollectionView"]
 - ["PSo18UITraitEnvironment", "parsePokemonCSV"]
+- !private ["PSo18UITraitEnvironment", "performSegueWithIdentifier"]
 - ["PSo18UITraitEnvironment", "pokemon"]
 - ["PSo18UITraitEnvironment", "positionForBar"]
+- ["PSo18UITraitEnvironment", "prepareForSegue"]
 - !private ["PSo18UITraitEnvironment", "print"]
 - !private ["PSo18UITraitEnvironment", "reloadData"]
 - !private ["PSo18UITraitEnvironment", "returnKeyType"]
@@ -1615,6 +1682,7 @@ depends-member:
 - !private ["CSo6UIView", "returnKeyType"]
 - !private ["CSo6UIView", "text"]
 - ["CSo16UIViewController", "AVAudioPlayer"]
+- ["CSo16UIViewController", "AnyObject"]
 - ["CSo16UIViewController", "CGSize"]
 - !private ["CSo16UIViewController", "CGSizeMake"]
 - !private ["CSo16UIViewController", "CSV"]
@@ -1625,6 +1693,7 @@ depends-member:
 - !private ["CSo16UIViewController", "NSURL"]
 - !private ["CSo16UIViewController", "PokeCell"]
 - ["CSo16UIViewController", "Pokemon"]
+- !private ["CSo16UIViewController", "PokemonDetailVC"]
 - ["CSo16UIViewController", "String"]
 - ["CSo16UIViewController", "UIButton"]
 - ["CSo16UIViewController", "UICollectionView"]
@@ -1632,8 +1701,10 @@ depends-member:
 - ["CSo16UIViewController", "UICollectionViewLayout"]
 - !private ["CSo16UIViewController", "UIReturnKeyType"]
 - ["CSo16UIViewController", "UISearchBar"]
+- ["CSo16UIViewController", "UIStoryboardSegue"]
 - ["CSo16UIViewController", "collection"]
 - ["CSo16UIViewController", "collectionView"]
+- !private ["CSo16UIViewController", "deinit"]
 - ["CSo16UIViewController", "filteredPokemon"]
 - ["CSo16UIViewController", "inSearchMode"]
 - ["CSo16UIViewController", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -1643,8 +1714,10 @@ depends-member:
 - ["CSo16UIViewController", "musicPlayer"]
 - ["CSo16UIViewController", "numberOfSectionsInCollectionView"]
 - ["CSo16UIViewController", "parsePokemonCSV"]
+- !private ["CSo16UIViewController", "performSegueWithIdentifier"]
 - ["CSo16UIViewController", "pokemon"]
 - ["CSo16UIViewController", "positionForBar"]
+- ["CSo16UIViewController", "prepareForSegue"]
 - !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "scrollViewDidEndDecelerating"]
 - ["CSo16UIViewController", "scrollViewDidEndDragging"]
@@ -1674,6 +1747,7 @@ depends-member:
 - !private ["Ps31UnicodeScalarLiteralConvertible", "lowercaseString"]
 - !private ["Ps31UnicodeScalarLiteralConvertible", "rangeOfString"]
 - ["C7Pokedex14ViewController", "AVAudioPlayer"]
+- ["C7Pokedex14ViewController", "AnyObject"]
 - ["C7Pokedex14ViewController", "CGSize"]
 - !private ["C7Pokedex14ViewController", "CGSizeMake"]
 - !private ["C7Pokedex14ViewController", "CSV"]
@@ -1684,6 +1758,7 @@ depends-member:
 - !private ["C7Pokedex14ViewController", "NSURL"]
 - !private ["C7Pokedex14ViewController", "PokeCell"]
 - ["C7Pokedex14ViewController", "Pokemon"]
+- !private ["C7Pokedex14ViewController", "PokemonDetailVC"]
 - ["C7Pokedex14ViewController", "String"]
 - ["C7Pokedex14ViewController", "UIButton"]
 - ["C7Pokedex14ViewController", "UICollectionView"]
@@ -1691,6 +1766,7 @@ depends-member:
 - ["C7Pokedex14ViewController", "UICollectionViewLayout"]
 - !private ["C7Pokedex14ViewController", "UIReturnKeyType"]
 - ["C7Pokedex14ViewController", "UISearchBar"]
+- ["C7Pokedex14ViewController", "UIStoryboardSegue"]
 - ["C7Pokedex14ViewController", "collection"]
 - ["C7Pokedex14ViewController", "collectionView"]
 - ["C7Pokedex14ViewController", "deinit"]
@@ -1703,8 +1779,10 @@ depends-member:
 - ["C7Pokedex14ViewController", "musicPlayer"]
 - ["C7Pokedex14ViewController", "numberOfSectionsInCollectionView"]
 - ["C7Pokedex14ViewController", "parsePokemonCSV"]
+- !private ["C7Pokedex14ViewController", "performSegueWithIdentifier"]
 - ["C7Pokedex14ViewController", "pokemon"]
 - ["C7Pokedex14ViewController", "positionForBar"]
+- ["C7Pokedex14ViewController", "prepareForSegue"]
 - !private ["C7Pokedex14ViewController", "print"]
 - ["C7Pokedex14ViewController", "scrollViewDidEndDecelerating"]
 - ["C7Pokedex14ViewController", "scrollViewDidEndDragging"]
@@ -1868,6 +1946,7 @@ depends-nominal:
 - !private "Ps16OutputStreamType"
 - !private "C7Pokedex8PokeCell"
 - "C7Pokedex7Pokemon"
+- !private "C7Pokedex15PokemonDetailVC"
 - "Ps21RandomAccessIndexType"
 - "Ps30RangeReplaceableCollectionType"
 - !private "Ps16RawRepresentable"
@@ -1904,6 +1983,7 @@ depends-nominal:
 - !private "CSo11UISearchBar"
 - "PSo19UISearchBarDelegate"
 - "PSo16UIStateRestoring"
+- !private "CSo17UIStoryboardSegue"
 - !private "PSo17UITextInputTraits"
 - "PSo18UITraitEnvironment"
 - !private "CSo6UIView"
@@ -1940,4 +2020,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
-interface-hash: "83fbdacf7dc72f69ca6f7e6c5db1bc3d"
+interface-hash: "d35c194f8fc60cc5c3a6ee5f3d04eb7e"

@@ -18,6 +18,7 @@
 		B553DADC1F783624006F567C /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = B553DADB1F783624006F567C /* csv.swift */; };
 		B553DAE11F784821006F567C /* pokemon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B553DAE01F784821006F567C /* pokemon.ttf */; };
 		B553DAE31F784E1D006F567C /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B553DAE21F784E1D006F567C /* music.mp3 */; };
+		B553DAE51F7857D5006F567C /* PokemonDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B553DAE41F7857D5006F567C /* PokemonDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		B553DADB1F783624006F567C /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
 		B553DAE01F784821006F567C /* pokemon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pokemon.ttf; sourceTree = "<group>"; };
 		B553DAE21F784E1D006F567C /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
+		B553DAE41F7857D5006F567C /* PokemonDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				B553DAC31F780364006F567C /* ViewController.swift */,
+				B553DAE41F7857D5006F567C /* PokemonDetailVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				B553DADA1F78289A006F567C /* PokeCell.swift in Sources */,
 				B553DAC41F780364006F567C /* ViewController.swift in Sources */,
 				B553DAC21F780364006F567C /* AppDelegate.swift in Sources */,
+				B553DAE51F7857D5006F567C /* PokemonDetailVC.swift in Sources */,
 				B553DAD71F781738006F567C /* Pokemon.swift in Sources */,
 				B553DADC1F783624006F567C /* csv.swift in Sources */,
 			);

@@ -125,13 +125,23 @@ SWIFT_CLASS("_TtC7Pokedex8PokeCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSBundle;
+
+SWIFT_CLASS("_TtC7Pokedex15PokemonDetailVC")
+@interface PokemonDetailVC : UIViewController
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified pokeName;
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class AVAudioPlayer;
 @class UICollectionView;
 @class NSIndexPath;
 @class UICollectionViewLayout;
 @class UIButton;
 @class UISearchBar;
-@class NSBundle;
+@class UIStoryboardSegue;
 
 SWIFT_CLASS("_TtC7Pokedex14ViewController")
 @interface ViewController : UIViewController <UIBarPositioningDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UIScrollViewDelegate, UISearchBarDelegate>
@@ -150,6 +160,7 @@ SWIFT_CLASS("_TtC7Pokedex14ViewController")
 - (IBAction)musicBtnPressed:(UIButton * _Null_unspecified)sender;
 - (void)searchBarSearchButtonClicked:(UISearchBar * _Nonnull)searchBar;
 - (void)searchBar:(UISearchBar * _Nonnull)searchBar textDidChange:(NSString * _Nonnull)searchText;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
