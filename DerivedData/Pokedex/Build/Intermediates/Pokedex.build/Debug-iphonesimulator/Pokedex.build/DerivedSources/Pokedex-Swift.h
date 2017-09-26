@@ -129,8 +129,21 @@ SWIFT_CLASS("_TtC7Pokedex8PokeCell")
 
 SWIFT_CLASS("_TtC7Pokedex15PokemonDetailVC")
 @interface PokemonDetailVC : UIViewController
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified pokeName;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified mainImg;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nameLbl;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified descriptionLbl;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified typeLbl;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified defenseLbl;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified heightLbl;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified pokedexLbl;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified weightLbl;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified attackLbl;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified currentEvoImg;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified nextEvoImg;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified evoLbl;
 - (void)viewDidLoad;
+- (void)updateUI;
+- (IBAction)backButtonPressed:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

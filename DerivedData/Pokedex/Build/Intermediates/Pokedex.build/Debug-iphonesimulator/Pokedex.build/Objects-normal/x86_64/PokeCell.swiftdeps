@@ -6,17 +6,17 @@ provides-nominal:
 provides-member:
 - ["C7Pokedex8PokeCell", ""]
 provides-dynamic-lookup:
-- "nameLbl"
 - "thumbImg"
+- "nameLbl"
 depends-top-level:
+- "UIImageView"
+- "NSCoder"
+- !private "UIImage"
 - !private "StringLiteralType"
-- "UICollectionViewCell"
-- "Pokemon"
 - "UILabel"
 - "PokeCell"
-- "NSCoder"
-- "UIImageView"
-- !private "UIImage"
+- "Pokemon"
+- "UICollectionViewCell"
 depends-member:
 - !private ["Ps9AnyObject", "UIImage"]
 - !private ["Ps9AnyObject", "capitalizedString"]
@@ -309,6 +309,8 @@ depends-member:
 - !private ["Vs6UInt32", "deinit"]
 - !private ["Vs6UInt64", "deinit"]
 - !private ["Vs5UInt8", "deinit"]
+- !private ["P9Alamofire20URLStringConvertible", "capitalizedString"]
+- !private ["P9Alamofire20URLStringConvertible", "init"]
 - !private ["Sc", "deinit"]
 - !private ["Ps31UnicodeScalarLiteralConvertible", "capitalizedString"]
 - !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
@@ -390,6 +392,7 @@ depends-nominal:
 - !private "Vs6UInt32"
 - !private "Vs6UInt64"
 - !private "Vs5UInt8"
+- !private "P9Alamofire20URLStringConvertible"
 - !private "Sc"
 - !private "Ps31UnicodeScalarLiteralConvertible"
 - !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
@@ -409,4 +412,11 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Users/Santana/Desktop/iOS Projects/Section10/Pokedex/DerivedData/Pokedex/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/Alamofire.swiftmodule/x86_64.swiftmodule"
+- "/Users/Santana/Desktop/iOS Projects/Section10/Pokedex/DerivedData/Pokedex/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/Santana/Desktop/iOS Projects/Section10/Pokedex/DerivedData/Pokedex/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/Santana/Desktop/iOS Projects/Section10/Pokedex/DerivedData/Pokedex/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/module.modulemap"
 interface-hash: "7d168660aec436815c08f9f3c98c093a"
